@@ -1,4 +1,3 @@
-
 /* Style the header */
 :root {
   --primary-color: aquamarine;
@@ -8,40 +7,37 @@
   --light-grey: #cccccc;
   --box-shadow-color: grey;
   --Corp-font: Monotype Corsiva;
-
-}
-header {
-  position:sticky;
-  top:0%;
 }
 
 .header {
+  display:flex;
+  justify-content: center;
   background-color:var(--secondary-color);
   color:var(--third-color);
-  /* Title should be Monotype Corsiva but not if it is a licensed Font */
   font-family:  Arial, Helvetica, sans-serif;
-  Font-size:1.5rem;
-  padding: 1px;
   text-align: center;
 }
 /* to get Facebook link in Header alignment */
-.header1{
-  display:flex;
-  justify-content: center;
+.header h1{
+  font-family: "monotype corsiva";
+  font-size:4em;
+  font-weight:normal;
+  padding:5px;
+  margin: auto;
 }
-
 /* Style for main body */
 body{
   background-color: var(--primary-color);
+  margin: 8pt;
 }
 
 /* Style for What is Popley Matters about box*/
 .aboutpm {
   text-align: justify;
   max-width: 1200px;
-  margin:50px auto;
+  margin: 50px auto;
   background-color: var(--light-grey);
-  padding: 20px;
+  justify-content: center;
   border-radius:15px;
   border: 4px solid  var(--fourth-color);
   box-shadow: 5px 10px var(--box-shadow-color);
@@ -50,25 +46,28 @@ body{
 .aboutpm h2{
   text-decoration: underline;
   text-align:center;
-  font: size 2px;rem;
+  font-size: 2em;
 }
 
 /* Style the top navigation bar*/
 .topnav {
-  display:flex;
+  display: flex;
   justify-content: center;
   overflow: hidden;
   background-color: var(--secondary-color);
+
 }
 /* Style for Nav Links */
 .topnav a {
   font-family:  Arial 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
   list-style: none;
-  width:100px;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+.topnav a:hover {
+  background-color: var(--light-grey);
 }
 /* dropdown menu formatting */
 .dropbtn {
@@ -88,7 +87,6 @@ body{
   min-width: 160px;
   z-index: 1;
 }
-
 .dropdown-content a {
   color: var(--secondary-color);
   padding: 12px 16px;
@@ -109,11 +107,11 @@ body{
 }
 /* Create three unequal columns that floats next to each other */
 .row{
-  display: flex;
-  justify-content: space-around;
+  display: inline-flexbox;
+  justify-content:space-around;
   flex-wrap: wrap;
   align-items: center;
-  padding:20px;
+  padding:5px;
   max-width: 1200px;
   margin:50px auto;
   background-color:  var(--light-grey);
@@ -124,8 +122,7 @@ body{
 .column {
   text-align:center;
   padding: 10px;
-  margin: auto;
-  width: 30%;
+  margin:10px auto;
   background-color:  var(--light-grey);
   border-radius:15px;
   border: 4px solid var(--fourth-color);
@@ -141,16 +138,16 @@ body{
 .button {
   background-color: #777777;
   color: white;
-  padding: 15px 35px;
+  padding: 5px 5px;
   text-decoration:none;
   display:inline-block;
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
-  width: 25%;
+  width: 33%;
   cursor: pointer;
   border: 1px;
   border-radius: 5dvi;
-  border: 4px solid var(--fourth-color);
+  border: 3px solid var(--fourth-color);
   box-shadow: 5px 5px var(--secondary-color);
 }
 /* turn Button red when Hovering */
@@ -163,12 +160,13 @@ body{
   box-shadow: 0 5px (--box-shadow-color);
   transform: translateY(4px);
 }    
-/* size box to put Popley Matters Issuesin */
+/* size box to put Popley Matters Issues in */
 .displayindesign{
   height:850px;
   width:1200px;
   display: flex;
-  margin: 0px auto;
+  margin: auto;
+
 }
 
 /* format message area on contact page */
@@ -187,6 +185,7 @@ input, textarea {
   width: 500px;
   font-size: 1rem;
 }
+
 /* Pseudo-elements for Email and Phone Labels */
 /* Add ✉️ and 📞 icons before the labels and Facebook after */
 .phone-label::before{content: "📞";}
@@ -228,4 +227,5 @@ input, textarea {
   Color:var(--third-color);
   padding: 2px;
   text-align: center;
+
 }

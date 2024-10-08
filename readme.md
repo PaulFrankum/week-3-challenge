@@ -47,7 +47,7 @@ As a developer, I want to migrate my existing website to Bootstrap so that I can
      ```
 3. **Migrate the layout to Bootstrap:**
 
-   - Use Bootstrap's [Grid System](https://getbootstrap.com/docs/4.5/layout/grid/) to restructure your layout for responsiveness. For example:
+   - Use Bootstrap's [Grid System] to restructure your layout for responsiveness. For example:(https://getbootstrap.com/docs/4.5/layout/grid/)
      ```html
      <div class="container">
        <div class="row">
@@ -62,8 +62,8 @@ As a developer, I want to migrate my existing website to Bootstrap so that I can
      ```
 
 4. **Incorporate Bootstrap components:**
-
-   - Replace existing UI elements with Bootstrap components. For example, replace a navigation menu with the [Navbar component](https://getbootstrap.com/docs/4.5/components/navbar/):
+https://getbootstrap.com/docs/4.5/components/navbar/
+   - Replace existing UI elements with Bootstrap components. For example, replace a navigation menu with the [Navbar component]():
      ```html
      <nav class="navbar navbar-expand-lg navbar-light bg-light">
        <a class="navbar-brand" href="#">Navbar</a>
