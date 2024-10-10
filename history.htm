@@ -4,37 +4,69 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>History of Popley</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
 
-<header> 
-  <div class="header">
-    <nav id="mobile-menu">
-      <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5 6.5H19V8H5V6.5Z" fill="#ffffff" />
-          <path d="M5 16.5H19V18H5V16.5Z" fill="#ffffff" />
-          <path d="M5 11.5H19V13H5V11.5Z" fill="#ffffff" />
-      </svg>
-      </nav>
+  <header> 
+    <div class="header">
+        <!-- Simulate a smartphone / tablet -->
+        <div class="mobile-container">
+      
+          <!-- Top Navigation Menu -->
+          <div class="topnav"  id="mobile-menu">
+
+            <a href="#home" class="active"</a>
+            <div id="myLinks">
+              <a href="./index.htm">Home</a>
+              <a href="./displayindesign.htm">PM 218-231</a>
+              <a href="./display85-217pdf.htm">PM 85-217</a>
+              <a href="./display32-84pdf.htm">PM 32-84</a>
+              <a href="./display12-31pdf.htm">PM 12-31</a>
+              <a href="./display5-11pdf.htm">PM 5-11</a>
+              <a href="./display1stpdf.htm">PM 1-4</a>
+              <a href="./history.htm">History of Popley</a>      
+              <a href="./about.htm">About</a>
+              <a href="./contact.htm">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          <!-- End smartphone / tablet look -->
+          </div>
+          
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+          </script>
+  
     <h1>Popley Matters Archive</h1>
     <a href="https://www.facebook.com/groups/PM200" target="_blank"><img src="./assets/facebook.png" alt="link to Popley Matters Facebook page"  style="margin:40px;width:50px;height:50px;"></a>
   </div> 
-      
-    <div class="topnav" id="desktop-menu">
-      <a href="./index.htm">Home</a>
-      <a href="./displayindesign.htm">Popley Matters 218-231</a>
-      <a href="./display85-217pdf.htm">Popley Matters 85-217</a>
-      <a href="./display32-84pdf.htm">Popley Matters 32-84</a>
-      <a href="./display12-31pdf.htm">Popley Matters 12-31</a>
-      <a href="./display5-11pdf.htm">Popley Matters 5-11</a>
-      <a href="./display1stpdf.htm">Popley Matters 1-4</a>
-      <a href="./history.htm">History of Popley</a>      
-      <a href="./about.htm">About</a>
-      <a href="./contact.htm">Contact</a>
-    </div>
-  </header>
+
+   <div class="topnav" id="desktop-menu">
+    <a href="./index.htm">Home</a>
+    <a href="./displayindesign.htm">Popley Matters 218-231</a>
+    <a href="./display85-217pdf.htm">Popley Matters 85-217</a>
+    <a href="./display32-84pdf.htm">Popley Matters 32-84</a>
+    <a href="./display12-31pdf.htm">Popley Matters 12-31</a>
+    <a href="./display5-11pdf.htm">Popley Matters 5-11</a>
+    <a href="./display1stpdf.htm">Popley Matters 1-4</a>
+    <a href="./history.htm">History of Popley</a>      
+    <a href="./about.htm">About</a>
+    <a href="./contact.htm">Contact</a>
+  </div>
+
+</header>
 
 
 <div class="aboutpm"> 
