@@ -8,19 +8,23 @@
   --box-shadow-color: grey;
   --Corp-font: Monotype Corsiva;
 }
-
 .header {
-  display:flex;
-  justify-content: center;
+  display: flex;
   background-color:var(--secondary-color);
   color:var(--third-color);
-  font-family:  Arial, Helvetica, sans-serif;
+  font-family: var(--corp-font);
+  font-size:24pt;
   text-align: center;
+  justify-content: center;
+  top:0px;
+  height:100px;
+  width:100%;
+  position:sticky;
 }
-/* to get Facebook link in Header alignment */
-.header h1{
+
+.header h1 {
   font-family: "monotype corsiva";
-  font-size:4em;
+  font-size:2em;
   font-weight:normal;
   padding:5px;
   margin: auto;
@@ -35,9 +39,9 @@ body{
 .aboutpm {
   text-align: justify;
   max-width: 1200px;
-  margin: 50px auto;
+  margin:50px auto;
   background-color: var(--light-grey);
-  justify-content: center;
+  padding: 20px;
   border-radius:15px;
   border: 4px solid  var(--fourth-color);
   box-shadow: 5px 10px var(--box-shadow-color);
@@ -55,6 +59,8 @@ body{
   justify-content: center;
   overflow: hidden;
   background-color: var(--secondary-color);
+  width:100%;
+  position:sticky;
 
 }
 /* Style for Nav Links */
@@ -105,9 +111,9 @@ body{
   background-color: #ddd;
   color: var(--secondary-color);
 }
-/* Create three unequal columns that floats next to each other */
+
 .row{
-  display: inline-flexbox;
+  display: flexbox;
   justify-content:space-around;
   flex-wrap: wrap;
   align-items: center;
@@ -123,18 +129,14 @@ body{
   text-align:center;
   padding: 10px;
   margin:10px auto;
+  height:320px;
   background-color:  var(--light-grey);
   border-radius:15px;
   border: 4px solid var(--fourth-color);
   box-shadow: 5px 10px (--box-shadow-color);
 
 }
-/* Clear floats after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 .button {
   background-color: #777777;
   color: white;
@@ -221,11 +223,29 @@ input, textarea {
   margin-bottom: 15px;
   text-align: left;
 }
-/* Style the footer for whole website*/
+#mobile-menu {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#desktop-menu {
+  display: sticky;
+}
+
+@media screen and (max-width: 875px) {
+  #mobile-menu {display: flex;}
+  .header h1 {font-size:2rem;}
+  body h2 {font-size:1rem;}
+  body p {font-size:.75rem;}
+             
+  #desktop-menu{display:none;}
+  }
+
+  /* Style the footer for whole website*/
 .footer {
   background-color: var(--secondary-color);
   Color:var(--third-color);
   padding: 2px;
   text-align: center;
-
 }
