@@ -8,18 +8,24 @@
   --box-shadow-color: grey;
   --Corp-font: Monotype Corsiva;
 }
+header {
+  position:sticky;
+  top:0px;
+  z-index: 1;
+}
 .header {
   display: flex;
+  position:sticky;
+  top:0px;
   background-color:var(--secondary-color);
   color:var(--third-color);
   font-family: var(--corp-font);
   font-size:24pt;
   text-align: center;
   justify-content: center;
-  top:0px;
   height:100px;
   width:100%;
-  position:sticky;
+
 }
 
 .header h1 {
@@ -184,8 +190,8 @@ body{
 
 /* size box to put Popley Matters Issues in */
 .displayindesign{
-  height:850px;
-  width: 1200px;
+  width:1200px;
+  height:809px;
   display: flex;
   margin: auto;
 
